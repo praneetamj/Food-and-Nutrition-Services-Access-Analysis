@@ -48,12 +48,4 @@ This project analyzes the distribution, accessibility, and trends of food and nu
   - Zip code and ward-level drilldowns
 - PDF project report
 
----
 
-## ▶️ How to Run
-
-1. Run the notebook using [Google Colab](https://colab.research.google.com/) or Jupyter
-2. Open `.html` files in any web browser to explore visualizations
-3. Required libraries include:
-   ```bash
-   pip install pandas geopandas plotly
