@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food and Nutrition Services Dashboard – Washington, D.C.</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0 5%;
+            background-color: #f4f6fa;
+            color: #3e4b64;
+        }
+
+        header {
+            background: linear-gradient(135deg, #6c7bbd, #3e4b64);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #586191;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 34px;
+        }
+
+        h2 {
+            color: #586191;
+            margin-top: 40px;
+            font-size: 22px;
+        }
+
+        .section {
+            background-color: #eef0fb;
+            padding: 25px;
+            border-radius: 14px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: 2px solid #c5cae9;
+            border-radius: 10px;
+        }
+
+        ul {
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            iframe {
+                height: 400px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Geospatial Dashboard of Food & Nutrition Services</h1>
+    <p>Washington, D.C. – Interactive Analysis Using Plotly</p>
+</header>
+
+<!-- 🔷 Executive Summary Section -->
+<div style="background: linear-gradient(135deg, #6c7bbd, #3e4b64); color: white; padding: 30px 20px; margin: 30px auto 40px auto; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+    <h2 style="margin-top: 0; font-size: 26px;">Executive Summary</h2>
+    <p style="font-size: 16px; line-height: 1.6;">
+        This interactive dashboard provides a geospatial and categorical overview of food and nutrition services across Washington, D.C. Using a combination of map-based visualizations, pie charts, and bar graphs, the dashboard highlights the distribution of services by location, category, ward, ZIP code, and census tract.
+        <br><br>
+        Key insights include:
+        <ul style="margin-left: 20px;">
+            <li>Most services are concentrated in Wards 4, 5, and 7, with notable density in neighborhoods with higher community needs.</li>
+            <li>Food delivery is the most common service category, followed by grocery distribution and congregate meals.</li>
+            <li>ZIP code 20011 and 20019 have the broadest range of services offered, as visualized in the service treemap.</li>
+            <li>Census tract analysis reveals service clusters, useful for identifying underserved areas.</li>
+            <li>The density heatmap further emphasizes regions of intense service activity, guiding strategic planning.</li>
+        </ul>
+        Together, these insights aim to support stakeholders in optimizing resource allocation and improving food access equity in the district.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Interactive Map of Service Locations</h2>
+    <iframe src="food_nutrition_map.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Service Category Distribution (Pie Chart)</h2>
+    <iframe src="service_category_distribution_pie.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Service Count by Ward (with Filter)</h2>
+    <iframe src="ward_service_dropdown.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Treemap of Service Categories by ZIP Code</h2>
+    <iframe src="treemap_service_by_zip.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Service Distribution Across Census Tracts</h2>
+    <iframe src="trend_service_by_tract.html"></iframe>
+</div>
+
+<div class="section">
+    <h2>Geospatial Density Heatmap of Services</h2>
+    <iframe src="geospatial_density_analysis.html"></iframe>
+</div>
+
+</body>
+</html>
